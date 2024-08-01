@@ -40,7 +40,7 @@
     "@stdlib/assert-is-error": "^0.2.2",
     "@stdlib/blas-base-assert-is-layout": "^0.0.2",
     "@stdlib/blas-base-assert-is-matrix-triangle": "^0.0.2",
-    "@stdlib/math-base-special-max": "^0.3.0",
+    "@stdlib/math-base-special-fast-max": "^0.3.0",
     "@stdlib/ndarray-base-assert-is-row-major": "^0.2.2",
     "@stdlib/number-float64-base-to-float32": "^0.2.2",
     "@stdlib/strided-base-stride2offset": "^0.1.0",

@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`0286f64`](https://github.com/stdlib-js/stdlib/commit/0286f64c5a635ec2ac7daf40bc38ae417c37b8a2) - **refactor:** use \"fast\" `max` utility _(by Athan Reines)_
 -   [`4300111`](https://github.com/stdlib-js/stdlib/commit/4300111c80e0bd4941dcdd30a6b6dd36f2250dce) - **feat:** add `blas/base/ssyr` [(#2658)](https://github.com/stdlib-js/stdlib/pull/2658) _(by Aman Bhansali, Athan Reines)_
 
 </details>
