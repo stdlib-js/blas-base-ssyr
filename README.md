@@ -39,32 +39,8 @@ limitations under the License.
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-ssyr = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ssyr@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var ssyr = require( 'path/to/vendor/umd/blas-base-ssyr/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ssyr@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.ssyr;
-})();
-</script>
+var ssyr = require( '@stdlib/blas-base-ssyr' );
 ```
 
 #### ssyr( order, uplo, N, α, x, sx, A, LDA )
@@ -130,10 +106,10 @@ Performs the symmetric rank 1 operation `A = α*x*x^T + A`, using alternative in
 var Float32Array = require( '@stdlib/array-float32' );
 
 var A = new Float32Array( [ 1.0, 2.0, 3.0, 0.0, 1.0, 2.0, 0.0, 0.0, 1.0 ] );
-var x = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 
-ssyr.ndarray( 'upper', 3, 1.0, x, -2, 4, A, 3, 1, 0 );
-// A => <Float32Array>[ 26.0, 17.0, 8.0, 0.0, 10.0, 5.0, 0.0, 0.0, 2.0 ]
+ssyr.ndarray( 'upper', 3, 1.0, x, 1, 0, A, 3, 1, 0 );
+// A => <Float32Array>[ 2.0, 4.0, 6.0, 0.0, 5.0, 8.0, 0.0, 0.0, 10.0 ]
 ```
 
 The function has the following additional parameters:
@@ -149,10 +125,10 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 var Float32Array = require( '@stdlib/array-float32' );
 
 var A = new Float32Array( [ 1.0, 2.0, 3.0, 0.0, 1.0, 2.0, 0.0, 0.0, 1.0 ] );
-var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
+var x = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 
-ssyr.ndarray( 'upper', 3, 1.0, x, 1, 0, A, 3, 1, 0 );
-// A => <Float32Array>[ 2.0, 4.0, 6.0, 0.0, 5.0, 8.0, 0.0, 0.0, 10.0 ]
+ssyr.ndarray( 'upper', 3, 1.0, x, -2, 4, A, 3, 1, 0 );
+// A => <Float32Array>[ 26.0, 17.0, 8.0, 0.0, 10.0, 5.0, 0.0, 0.0, 2.0 ]
 ```
 
 </section>
@@ -175,15 +151,10 @@ ssyr.ndarray( 'upper', 3, 1.0, x, 1, 0, A, 3, 1, 0 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-ones@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ssyr@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
+var ones = require( '@stdlib/array-ones' );
+var ssyr = require( '@stdlib/blas-base-ssyr' );
 
 var opts = {
     'dtype': 'float32'
@@ -196,11 +167,6 @@ var x = discreteUniform( N, -10.0, 10.0, opts );
 
 ssyr( 'row-major', 'upper', 3, 1.0, x, 1, A, 3 );
 console.log( A );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -209,7 +175,93 @@ console.log( A );
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="installation">
+
+## Installation
+
+```bash
+npm install @stdlib/blas-base-ssyr
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
+
+<section class="usage">
+
+### Usage
+
+```c
+TODO
+```
+
+#### TODO
+
+TODO.
+
+```c
+TODO
+```
+
+TODO
+
+```c
+TODO
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+TODO
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
