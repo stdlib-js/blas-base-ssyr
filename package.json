@@ -45,7 +45,7 @@
     "@stdlib/number-float64-base-to-float32": "^0.2.2",
     "@stdlib/strided-base-stride2offset": "^0.1.0",
     "@stdlib/string-format": "^0.2.2",
-    "@stdlib/types": "^0.3.2",
+    "@stdlib/types": "^0.4.3",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2",
     "@stdlib/utils-try-require": "^0.2.2",
     "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
@@ -54,9 +54,7 @@
     "@stdlib/array-float32": "^0.2.2",
     "@stdlib/array-ones": "^0.2.1",
     "@stdlib/assert-is-browser": "^0.2.2",
-    "@stdlib/constants-float32-eps": "^0.2.2",
     "@stdlib/math-base-assert-is-nanf": "^0.2.2",
-    "@stdlib/math-base-special-abs": "^0.2.2",
     "@stdlib/math-base-special-floor": "^0.2.3",
     "@stdlib/math-base-special-pow": "^0.3.0",
     "@stdlib/random-array-discrete-uniform": "^0.2.1",
