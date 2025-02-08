@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-09)
+## Unreleased (2025-02-08)
 
 <section class="features">
 
 ### Features
 
+-   [`924f85a`](https://github.com/stdlib-js/stdlib/commit/924f85ad57aec54ede64c9db9ee96459befa2c00) - add C implementation for `blas/base/ssyr` [(#2877)](https://github.com/stdlib-js/stdlib/pull/2877)
 -   [`4300111`](https://github.com/stdlib-js/stdlib/commit/4300111c80e0bd4941dcdd30a6b6dd36f2250dce) - add `blas/base/ssyr` [(#2658)](https://github.com/stdlib-js/stdlib/pull/2658)
 
 </section>
@@ -22,6 +23,7 @@
 
 <details>
 
+-   [`924f85a`](https://github.com/stdlib-js/stdlib/commit/924f85ad57aec54ede64c9db9ee96459befa2c00) - **feat:** add C implementation for `blas/base/ssyr` [(#2877)](https://github.com/stdlib-js/stdlib/pull/2877) _(by Aman Bhansali, Athan Reines, stdlib-bot)_
 -   [`4ca068f`](https://github.com/stdlib-js/stdlib/commit/4ca068f174225d1eaec123656682589febf1b547) - **test:** update to test for exact equality [(#2864)](https://github.com/stdlib-js/stdlib/pull/2864) _(by Aman Bhansali)_
 -   [`e0cef99`](https://github.com/stdlib-js/stdlib/commit/e0cef995e884021db3001dc1a3cfef0ca7b368c2) - **style:** remove extra spaces for regular expressions in publish script _(by Philipp Burckhardt)_
 -   [`b3a0bd1`](https://github.com/stdlib-js/stdlib/commit/b3a0bd1a3e9bcdde3af048c7d6b6cfcd3765138f) - **docs:** fix example order _(by Athan Reines)_
