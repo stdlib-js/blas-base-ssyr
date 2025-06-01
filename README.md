@@ -35,38 +35,32 @@ limitations under the License.
 
 > Perform the symmetric rank 1 operation `A = α*x*x**T + A`.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/blas-base-ssyr
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-ssyr = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ssyr@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var ssyr = require( 'path/to/vendor/umd/blas-base-ssyr/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ssyr@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.ssyr;
-})();
-</script>
+var ssyr = require( '@stdlib/blas-base-ssyr' );
 ```
 
 #### ssyr( order, uplo, N, α, x, sx, A, LDA )
@@ -177,15 +171,10 @@ ssyr.ndarray( 'upper', 3, 1.0, x, -2, 4, A, 3, 1, 0 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-ones@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ssyr@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
+var ones = require( '@stdlib/array-ones' );
+var ssyr = require( '@stdlib/blas-base-ssyr' );
 
 var opts = {
     'dtype': 'float32'
@@ -198,11 +187,6 @@ var x = discreteUniform( N, -10.0, 10.0, opts );
 
 ssyr( 'row-major', 'upper', 3, 1.0, x, 1, A, 3 );
 console.log( A );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -211,7 +195,144 @@ console.log( A );
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/blas/base/ssyr.h"
+```
+
+#### c_ssyr( order, uplo, N, alpha, \*X, strideX, \*A, LDA )
+
+Performs the symmetric rank 1 operation `A = α*x*x^T + A`.
+
+```c
+#include "stdlib/blas/base/shared.h"
+
+float A[] = { 1.0f, 0.0f, 0.0f, 2.0f, 1.0f, 0.0f, 3.0f, 2.0f, 1.0f };
+const float x[] = { 1.0f, 2.0f, 3.0f };
+
+c_ssyr( CblasColMajor, CblasUpper, 3, 1.0f, x, 1, A, 3 );
+```
+
+The function accepts the following arguments:
+
+-   **order**: `[in] CBLAS_LAYOUT` storage layout.
+-   **uplo**: `[in] CBLAS_UPLO` specifies whether the upper or lower triangular part of the symmetric matrix `A` should be referenced.
+-   **N**: `[in] CBLAS_INT` number of elements along each dimension of `A`.
+-   **alpha**: `[in] float` scalar.
+-   **X**: `[in] float*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **A**: `[inout] float*` input matrix.
+-   **LDA**: `[in] CBLAS_INT` stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`).
+
+```c
+void c_ssyr( const CBLAS_LAYOUT order, const CBLAS_UPLO uplo, const CBLAS_INT N, const float alpha, const float *X, const CBLAS_INT strideX, float *A, const CBLAS_INT LDA )
+```
+
+#### c_ssyr_ndarray( uplo, N, alpha, \*X, strideX, offsetX, \*A, sa1, sa2, oa )
+
+Performs the symmetric rank 1 operation `A = α*x*x^T + A` using alternative indexing semantics.
+
+```c
+#include "stdlib/blas/base/shared.h"
+
+float A[] = { 1.0f, 2.0f, 3.0f, 0.0f, 1.0f, 2.0f, 0.0f, 0.0f, 1.0f };
+const float x[] = { 1.0f, 2.0f, 3.0f };
+
+c_ssyr_ndarray( CblasUpper, 3, 1.0f, x, 1, 0, A, 3, 1, 0 );
+```
+
+The function accepts the following arguments:
+
+-   **uplo**: `[in] CBLAS_UPLO` specifies whether the upper or lower triangular part of the symmetric matrix `A` should be referenced.
+-   **N**: `[in] CBLAS_INT` number of elements along each dimension of `A`.
+-   **alpha**: `[in] float` scalar.
+-   **X**: `[in] float*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+-   **A**: `[inout] float*` input matrix.
+-   **sa1**: `[in] CBLAS_INT` stride of the first dimension of `A`.
+-   **sa2**: `[in] CBLAS_INT` stride of the second dimension of `A`.
+-   **oa**: `[in] CBLAS_INT` starting index for `A`.
+
+```c
+void c_ssyr_ndarray( const CBLAS_UPLO uplo, const CBLAS_INT N, const float alpha, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, float *A, const CBLAS_INT sa1, const CBLAS_INT sa2, const CBLAS_INT oa )
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/blas/base/ssyr.h"
+#include "stdlib/blas/base/shared.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Create strided arrays:
+    float A[] = { 1.0f, 0.0f, 0.0f, 2.0f, 1.0f, 0.0f, 3.0f, 2.0f, 1.0f };
+    const float x[] = { 1.0f, 2.0f, 3.0f };
+
+    // Specify the number of elements along each dimension of `A`:
+    const int N = 3;
+
+    // Perform the symmetric rank 1 operation `A = α*x*x^T + A`:
+    c_ssyr( CblasColMajor, CblasUpper, N, 1.0f, x, 1, A, N );
+
+    // Print the result:
+    for ( int i = 0; i < N*N; i++ ) {
+        printf( "A[ %i ] = %f\n", i, A[ i ] );
+    }
+
+    // Perform the symmetric rank 1 operation `A = α*x*x^T + A`:
+    c_ssyr_ndarray( CblasUpper, N, 1.0f, x, 1, 0, A, N, 1, 0 );
+
+    // Print the result:
+    for ( int i = 0; i < N*N; i++ ) {
+        printf( "A[ %i ] = %f\n", i, A[ i ] );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
