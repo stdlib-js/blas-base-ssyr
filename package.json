@@ -53,6 +53,7 @@
     "@stdlib/napi-argv-strided-float32array": "^0.2.2",
     "@stdlib/napi-argv-strided-float32array2d": "github:stdlib-js/napi-argv-strided-float32array2d#main",
     "@stdlib/napi-export": "^0.2.2",
+    "@stdlib/ndarray-base-assert-is-column-major-string": "github:stdlib-js/ndarray-base-assert-is-column-major-string#main",
     "@stdlib/ndarray-base-assert-is-row-major": "^0.2.2",
     "@stdlib/number-float64-base-to-float32": "^0.2.2",
     "@stdlib/strided-base-stride2offset": "^0.1.0",

@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-19)
+## Unreleased (2025-06-01)
 
 <section class="features">
 
@@ -23,6 +23,8 @@
 
 <details>
 
+-   [`b1a3710`](https://github.com/stdlib-js/stdlib/commit/b1a37102ff35dc3ecd007e2368922460473802d9) - **test:** add test cases for `blas/base/ssyr` [(#7131)](https://github.com/stdlib-js/stdlib/pull/7131) _(by Shabareesh Shetty, Athan Reines)_
+-   [`fc9c88f`](https://github.com/stdlib-js/stdlib/commit/fc9c88ff41a53e19630356e768ed4cbb1a0b7ae2) - **refactor:** use base assertion utility _(by Athan Reines)_
 -   [`11547d9`](https://github.com/stdlib-js/stdlib/commit/11547d91e2263d65cd490822acb17bd82f3bc4da) - **test:** add test cases for `blas/base/ssyr` [(#6727)](https://github.com/stdlib-js/stdlib/pull/6727) _(by Shabareesh Shetty)_
 -   [`924f85a`](https://github.com/stdlib-js/stdlib/commit/924f85ad57aec54ede64c9db9ee96459befa2c00) - **feat:** add C implementation for `blas/base/ssyr` [(#2877)](https://github.com/stdlib-js/stdlib/pull/2877) _(by Aman Bhansali, Athan Reines, stdlib-bot)_
 -   [`4ca068f`](https://github.com/stdlib-js/stdlib/commit/4ca068f174225d1eaec123656682589febf1b547) - **test:** update to test for exact equality [(#2864)](https://github.com/stdlib-js/stdlib/pull/2864) _(by Aman Bhansali)_
