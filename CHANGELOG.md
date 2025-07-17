@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-01)
+## Unreleased (2025-07-17)
 
 <section class="features">
 
 ### Features
 
+-   [`4f94e60`](https://github.com/stdlib-js/stdlib/commit/4f94e6071dbc28c204f01b2aae41618cc0bfc60b) - add C implementation to `blas/base/ssyr` [(#7127)](https://github.com/stdlib-js/stdlib/pull/7127)
 -   [`924f85a`](https://github.com/stdlib-js/stdlib/commit/924f85ad57aec54ede64c9db9ee96459befa2c00) - add C implementation for `blas/base/ssyr` [(#2877)](https://github.com/stdlib-js/stdlib/pull/2877)
 -   [`4300111`](https://github.com/stdlib-js/stdlib/commit/4300111c80e0bd4941dcdd30a6b6dd36f2250dce) - add `blas/base/ssyr` [(#2658)](https://github.com/stdlib-js/stdlib/pull/2658)
 
@@ -23,6 +24,8 @@
 
 <details>
 
+-   [`4f94e60`](https://github.com/stdlib-js/stdlib/commit/4f94e6071dbc28c204f01b2aae41618cc0bfc60b) - **feat:** add C implementation to `blas/base/ssyr` [(#7127)](https://github.com/stdlib-js/stdlib/pull/7127) _(by Shabareesh Shetty, Athan Reines)_
+-   [`7ec74ef`](https://github.com/stdlib-js/stdlib/commit/7ec74ef82dc2c2442729e5ec84073d61d8501c84) - **docs:** avoid using JS strict equality operators in C comments _(by Philipp Burckhardt)_
 -   [`b1a3710`](https://github.com/stdlib-js/stdlib/commit/b1a37102ff35dc3ecd007e2368922460473802d9) - **test:** add test cases for `blas/base/ssyr` [(#7131)](https://github.com/stdlib-js/stdlib/pull/7131) _(by Shabareesh Shetty, Athan Reines)_
 -   [`fc9c88f`](https://github.com/stdlib-js/stdlib/commit/fc9c88ff41a53e19630356e768ed4cbb1a0b7ae2) - **refactor:** use base assertion utility _(by Athan Reines)_
 -   [`11547d9`](https://github.com/stdlib-js/stdlib/commit/11547d91e2263d65cd490822acb17bd82f3bc4da) - **test:** add test cases for `blas/base/ssyr` [(#6727)](https://github.com/stdlib-js/stdlib/pull/6727) _(by Shabareesh Shetty)_
