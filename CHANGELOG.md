@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-21)
+## Unreleased (2025-12-18)
 
 <section class="features">
 
@@ -18,12 +18,26 @@
 
 <!-- /.features -->
 
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#9134](https://github.com/stdlib-js/stdlib/issues/9134)
+
+</section>
+
+<!-- /.issues -->
+
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`540a83e`](https://github.com/stdlib-js/stdlib/commit/540a83e5de5378d3c74ab97ee4ce92517fa00a56) - **docs:** fix broken Markdown link [(#9170)](https://github.com/stdlib-js/stdlib/pull/9170) _(by Manit Roy)_
+-   [`d559fd7`](https://github.com/stdlib-js/stdlib/commit/d559fd70de9ec9b1d72d22543876f380e4062c69) - **refactor:** update include header guards for single precision real packages [(#7710)](https://github.com/stdlib-js/stdlib/pull/7710) _(by Shabareesh Shetty)_
 -   [`4f94e60`](https://github.com/stdlib-js/stdlib/commit/4f94e6071dbc28c204f01b2aae41618cc0bfc60b) - **feat:** add C implementation to `blas/base/ssyr` [(#7127)](https://github.com/stdlib-js/stdlib/pull/7127) _(by Shabareesh Shetty, Athan Reines)_
 -   [`7ec74ef`](https://github.com/stdlib-js/stdlib/commit/7ec74ef82dc2c2442729e5ec84073d61d8501c84) - **docs:** avoid using JS strict equality operators in C comments _(by Philipp Burckhardt)_
 -   [`b1a3710`](https://github.com/stdlib-js/stdlib/commit/b1a37102ff35dc3ecd007e2368922460473802d9) - **test:** add test cases for `blas/base/ssyr` [(#7131)](https://github.com/stdlib-js/stdlib/pull/7131) _(by Shabareesh Shetty, Athan Reines)_
@@ -47,10 +61,11 @@
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Aman Bhansali
 -   Athan Reines
+-   Manit Roy
 -   Philipp Burckhardt
 -   Shabareesh Shetty
 
