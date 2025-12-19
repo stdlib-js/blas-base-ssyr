@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-18)
+## Unreleased (2025-12-19)
 
 <section class="features">
 
@@ -36,6 +36,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`3633d58`](https://github.com/stdlib-js/stdlib/commit/3633d5834de17c392e5fb5bb2a3b45198da52831) - **bench:** refactor to use dynamic memory allocation [(#9218)](https://github.com/stdlib-js/stdlib/pull/9218) _(by Samarth Kolarkar)_
 -   [`540a83e`](https://github.com/stdlib-js/stdlib/commit/540a83e5de5378d3c74ab97ee4ce92517fa00a56) - **docs:** fix broken Markdown link [(#9170)](https://github.com/stdlib-js/stdlib/pull/9170) _(by Manit Roy)_
 -   [`d559fd7`](https://github.com/stdlib-js/stdlib/commit/d559fd70de9ec9b1d72d22543876f380e4062c69) - **refactor:** update include header guards for single precision real packages [(#7710)](https://github.com/stdlib-js/stdlib/pull/7710) _(by Shabareesh Shetty)_
 -   [`4f94e60`](https://github.com/stdlib-js/stdlib/commit/4f94e6071dbc28c204f01b2aae41618cc0bfc60b) - **feat:** add C implementation to `blas/base/ssyr` [(#7127)](https://github.com/stdlib-js/stdlib/pull/7127) _(by Shabareesh Shetty, Athan Reines)_
@@ -61,12 +62,13 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 5 people contributed to this release. Thank you to the following contributors:
+A total of 6 people contributed to this release. Thank you to the following contributors:
 
 -   Aman Bhansali
 -   Athan Reines
 -   Manit Roy
 -   Philipp Burckhardt
+-   Samarth Kolarkar
 -   Shabareesh Shetty
 
 </section>
