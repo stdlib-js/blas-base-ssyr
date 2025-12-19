@@ -435,7 +435,7 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [blas]: http://www.netlib.org/blas
 
-[blas-ssyr]: https://netlib.org/lapack//explore-html/dc/d82/group__her_gad7585662770cdd3001ed08c7a864cd21.html
+[blas-ssyr]: https://netlib.org/lapack/explore-html/dc/d82/group__her_gad7585662770cdd3001ed08c7a864cd21.html
 
 [mdn-float32array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array
 

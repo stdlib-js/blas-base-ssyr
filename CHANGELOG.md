@@ -22,9 +22,9 @@
 
 ### Closed Issues
 
-This release closes the following issue:
+A total of 2 issues were closed in this release:
 
-[#9134](https://github.com/stdlib-js/stdlib/issues/9134)
+[#9134](https://github.com/stdlib-js/stdlib/issues/9134), [#9236](https://github.com/stdlib-js/stdlib/issues/9236)
 
 </section>
 
@@ -36,6 +36,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`c0aae8f`](https://github.com/stdlib-js/stdlib/commit/c0aae8f567edd8e5ea8f0f5aace75f2a8a141009) - **chore:** address commit comments [(#9242)](https://github.com/stdlib-js/stdlib/pull/9242) _(by DivitJain26)_
 -   [`3633d58`](https://github.com/stdlib-js/stdlib/commit/3633d5834de17c392e5fb5bb2a3b45198da52831) - **bench:** refactor to use dynamic memory allocation [(#9218)](https://github.com/stdlib-js/stdlib/pull/9218) _(by Samarth Kolarkar)_
 -   [`540a83e`](https://github.com/stdlib-js/stdlib/commit/540a83e5de5378d3c74ab97ee4ce92517fa00a56) - **docs:** fix broken Markdown link [(#9170)](https://github.com/stdlib-js/stdlib/pull/9170) _(by Manit Roy)_
 -   [`d559fd7`](https://github.com/stdlib-js/stdlib/commit/d559fd70de9ec9b1d72d22543876f380e4062c69) - **refactor:** update include header guards for single precision real packages [(#7710)](https://github.com/stdlib-js/stdlib/pull/7710) _(by Shabareesh Shetty)_
@@ -62,10 +63,11 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 6 people contributed to this release. Thank you to the following contributors:
+A total of 7 people contributed to this release. Thank you to the following contributors:
 
 -   Aman Bhansali
 -   Athan Reines
+-   DivitJain26
 -   Manit Roy
 -   Philipp Burckhardt
 -   Samarth Kolarkar
