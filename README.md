@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ssyr from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ssyr@deno/mod.js';
+import ssyr from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ssyr@v0.1.0-deno/mod.js';
 ```
 
 #### ssyr( order, uplo, N, α, x, sx, A, LDA )
@@ -156,7 +156,7 @@ ssyr.ndarray( 'upper', 3, 1.0, x, -2, 4, A, 3, 1, 0 );
 ```javascript
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
 import ones from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-ones@deno/mod.js';
-import ssyr from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ssyr@deno/mod.js';
+import ssyr from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ssyr@v0.1.0-deno/mod.js';
 
 var opts = {
     'dtype': 'float32'
