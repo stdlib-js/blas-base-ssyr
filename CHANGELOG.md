@@ -4,7 +4,19 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-02)
+## Unreleased (2026-03-22)
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#10980](https://github.com/stdlib-js/stdlib/issues/10980)
+
+</section>
+
+<!-- /.issues -->
 
 <section class="commits">
 
@@ -12,6 +24,7 @@
 
 <details>
 
+-   [`e3d94c0`](https://github.com/stdlib-js/stdlib/commit/e3d94c0deb7d17a39a5e4c5e54372074db3d3d60) - **chore:** fix JavaScript lint errors [(#10997)](https://github.com/stdlib-js/stdlib/pull/10997) _(by Partha Das)_
 -   [`5b091c2`](https://github.com/stdlib-js/stdlib/commit/5b091c2142b1eb2472a7049910be65fcda5a87bf) - **bench:** refactor to use string interpolation in `blas/base/ssyr` [(#10458)](https://github.com/stdlib-js/stdlib/pull/10458) _(by Lokesh Ranjan)_
 
 </details>
@@ -24,9 +37,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
 -   Lokesh Ranjan
+-   Partha Das
 
 </section>
 
