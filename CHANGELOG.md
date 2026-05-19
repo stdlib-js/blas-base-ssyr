@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-11)
+## Unreleased (2026-05-19)
 
 <section class="issues">
 
@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`9559de0`](https://github.com/stdlib-js/stdlib/commit/9559de093ed0c43ba65c7b6829be61a5967cd2f4) - **chore:** propagate typo and doc-note fixes across `blas` sibling packages [(#12202)](https://github.com/stdlib-js/stdlib/pull/12202) _(by Philipp Burckhardt)_
 -   [`35566af`](https://github.com/stdlib-js/stdlib/commit/35566af0add64775e60422fd16e50e1bec3947e7) - **docs:** fix C examples in READMEs [(#11229)](https://github.com/stdlib-js/stdlib/pull/11229) _(by anee3, Athan Reines)_
 -   [`e3d94c0`](https://github.com/stdlib-js/stdlib/commit/e3d94c0deb7d17a39a5e4c5e54372074db3d3d60) - **chore:** fix JavaScript lint errors [(#10997)](https://github.com/stdlib-js/stdlib/pull/10997) _(by Partha Das)_
 -   [`5b091c2`](https://github.com/stdlib-js/stdlib/commit/5b091c2142b1eb2472a7049910be65fcda5a87bf) - **bench:** refactor to use string interpolation in `blas/base/ssyr` [(#10458)](https://github.com/stdlib-js/stdlib/pull/10458) _(by Lokesh Ranjan)_
@@ -38,11 +39,12 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Lokesh Ranjan
 -   Partha Das
+-   Philipp Burckhardt
 -   anee3
 
 </section>
