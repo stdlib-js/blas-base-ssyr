@@ -4,15 +4,15 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-19)
+## Unreleased (2026-05-24)
 
 <section class="issues">
 
 ### Closed Issues
 
-This release closes the following issue:
+A total of 2 issues were closed in this release:
 
-[#10980](https://github.com/stdlib-js/stdlib/issues/10980)
+[#10980](https://github.com/stdlib-js/stdlib/issues/10980), [#12236](https://github.com/stdlib-js/stdlib/issues/12236)
 
 </section>
 
@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`40dad68`](https://github.com/stdlib-js/stdlib/commit/40dad68e605aadfb8380e25d3b8f9dc1a0a3389a) - **chore:** fix JavaScript lint errors [(#12257)](https://github.com/stdlib-js/stdlib/pull/12257) _(by Nathanael Mbale, Athan Reines)_
 -   [`9559de0`](https://github.com/stdlib-js/stdlib/commit/9559de093ed0c43ba65c7b6829be61a5967cd2f4) - **chore:** propagate typo and doc-note fixes across `blas` sibling packages [(#12202)](https://github.com/stdlib-js/stdlib/pull/12202) _(by Philipp Burckhardt)_
 -   [`35566af`](https://github.com/stdlib-js/stdlib/commit/35566af0add64775e60422fd16e50e1bec3947e7) - **docs:** fix C examples in READMEs [(#11229)](https://github.com/stdlib-js/stdlib/pull/11229) _(by anee3, Athan Reines)_
 -   [`e3d94c0`](https://github.com/stdlib-js/stdlib/commit/e3d94c0deb7d17a39a5e4c5e54372074db3d3d60) - **chore:** fix JavaScript lint errors [(#10997)](https://github.com/stdlib-js/stdlib/pull/10997) _(by Partha Das)_
@@ -39,10 +40,11 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 5 people contributed to this release. Thank you to the following contributors:
+A total of 6 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Lokesh Ranjan
+-   Nathanael Mbale
 -   Partha Das
 -   Philipp Burckhardt
 -   anee3
