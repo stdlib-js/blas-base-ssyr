@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-24)
+## Unreleased (2026-07-10)
 
 <section class="issues">
 
@@ -24,6 +24,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`c519b5c`](https://github.com/stdlib-js/stdlib/commit/c519b5c1039d0652fd3c63a8b3b5ec5b48b42fcc) - **refactor:** add support for enums [(#13403)](https://github.com/stdlib-js/stdlib/pull/13403) _(by Kaustubh Patange, Athan Reines)_
 -   [`40dad68`](https://github.com/stdlib-js/stdlib/commit/40dad68e605aadfb8380e25d3b8f9dc1a0a3389a) - **chore:** fix JavaScript lint errors [(#12257)](https://github.com/stdlib-js/stdlib/pull/12257) _(by Nathanael Mbale, Athan Reines)_
 -   [`9559de0`](https://github.com/stdlib-js/stdlib/commit/9559de093ed0c43ba65c7b6829be61a5967cd2f4) - **chore:** propagate typo and doc-note fixes across `blas` sibling packages [(#12202)](https://github.com/stdlib-js/stdlib/pull/12202) _(by Philipp Burckhardt)_
 -   [`35566af`](https://github.com/stdlib-js/stdlib/commit/35566af0add64775e60422fd16e50e1bec3947e7) - **docs:** fix C examples in READMEs [(#11229)](https://github.com/stdlib-js/stdlib/pull/11229) _(by anee3, Athan Reines)_
@@ -40,9 +41,10 @@ A total of 2 issues were closed in this release:
 
 ### Contributors
 
-A total of 6 people contributed to this release. Thank you to the following contributors:
+A total of 7 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Kaustubh Patange
 -   Lokesh Ranjan
 -   Nathanael Mbale
 -   Partha Das
