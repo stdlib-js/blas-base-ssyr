@@ -233,10 +233,10 @@ Performs the symmetric rank 1 operation `A = α*x*x^T + A` where `α` is a scala
 ```c
 #include "stdlib/blas/base/shared.h"
 
-float A[] = { 1.0, 2.0, 3.0, 2.0, 1.0, 2.0, 3.0, 2.0, 1.0 };
-const float x[] = { 1.0, 2.0, 3.0 };
+float A[] = { 1.0f, 2.0f, 3.0f, 2.0f, 1.0f, 2.0f, 3.0f, 2.0f, 1.0f };
+const float x[] = { 1.0f, 2.0f, 3.0f };
 
-c_ssyr( CblasColMajor, CblasUpper, 3, 1.0, x, 1, A, 3 );
+c_ssyr( CblasColMajor, CblasUpper, 3, 1.0f, x, 1, A, 3 );
 ```
 
 The function accepts the following arguments:
@@ -261,10 +261,10 @@ Performs the symmetric rank 1 operation `A = α*x*x^T + A`, using alternative in
 ```c
 #include "stdlib/blas/base/shared.h"
 
-float A[] = { 1.0, 2.0, 3.0, 2.0, 1.0, 2.0, 3.0, 2.0, 1.0 };
-const float x[] = { 1.0, 2.0, 3.0 };
+float A[] = { 1.0f, 2.0f, 3.0f, 2.0f, 1.0f, 2.0f, 3.0f, 2.0f, 1.0f };
+const float x[] = { 1.0f, 2.0f, 3.0f };
 
-c_ssyr_ndarray( CblasUpper, 3, 1.0, x, 1, 0, A, 3, 1, 0 );
+c_ssyr_ndarray( CblasUpper, 3, 1.0f, x, 1, 0, A, 3, 1, 0 );
 ```
 
 The function accepts the following arguments:
@@ -336,7 +336,7 @@ int main( void ) {
     }
 
     // Perform the symmetric rank 1 operation `A = α*x*x^T + A` using alternative indexing semantics:
-    c_ssyr_ndarray( CblasUpper, N, 1.0, x, 1, 0, A2, N, 1, 0 );
+    c_ssyr_ndarray( CblasUpper, N, 1.0f, x, 1, 0, A2, N, 1, 0 );
 
     // Print the result:
     for ( int i = 0; i < N*N; i++ ) {

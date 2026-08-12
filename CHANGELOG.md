@@ -24,6 +24,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`cb9723a`](https://github.com/stdlib-js/stdlib/commit/cb9723af638d9244ea0b50bcb07c550f13bdedce) - **docs:** update examples [(#14169)](https://github.com/stdlib-js/stdlib/pull/14169) _(by Philipp Burckhardt)_
 -   [`8f3e141`](https://github.com/stdlib-js/stdlib/commit/8f3e1414f7483d10adf64b81b2e857ac080bef64) - **refactor:** add support for enums _(by Athan Reines)_
 -   [`c519b5c`](https://github.com/stdlib-js/stdlib/commit/c519b5c1039d0652fd3c63a8b3b5ec5b48b42fcc) - **refactor:** add support for enums [(#13403)](https://github.com/stdlib-js/stdlib/pull/13403) _(by Kaustubh Patange, Athan Reines)_
 -   [`40dad68`](https://github.com/stdlib-js/stdlib/commit/40dad68e605aadfb8380e25d3b8f9dc1a0a3389a) - **chore:** fix JavaScript lint errors [(#12257)](https://github.com/stdlib-js/stdlib/pull/12257) _(by Nathanael Mbale, Athan Reines)_
